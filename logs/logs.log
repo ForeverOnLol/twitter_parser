@@ -1,0 +1,156 @@
+[05.06.2022 20:09:03 | ERROR | MainThread]: AttributeError: 'EnvConfig' object has no attribute 'TG_BOT_TOKEN':
+  File "/home/fol/Documents/Python/TeleTwitBot/run.py", line 2, in <module>
+    from manager import ThreadingManager
+  File "/home/fol/Documents/Python/TeleTwitBot/manager.py", line 10, in <module>
+    from telegram_bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/__init__.py", line 1, in <module>
+    from .bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/bot.py", line 7, in <module>
+    from .constants import bot, dp, Bot, Dispatcher
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/constants.py", line 6, in <module>
+    bot = Bot(EnvConfig().TG_BOT_TOKEN)
+
+[05.06.2022 20:09:44 | ERROR | MainThread]: NameError: Invalid filter name(s): 'is_channel_admin':
+  File "/home/fol/Documents/Python/TeleTwitBot/run.py", line 2, in <module>
+    from manager import ThreadingManager
+  File "/home/fol/Documents/Python/TeleTwitBot/manager.py", line 10, in <module>
+    from telegram_bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/__init__.py", line 1, in <module>
+    from .bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/bot.py", line 8, in <module>
+    from .commands import start, main_functions
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/commands/main_functions.py", line 9, in <module>
+    async def vis_command(message: types.Message):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 560, in decorator
+    self.register_message_handler(callback, *custom_filters,
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 479, in register_message_handler
+    filters_set = self.filters_factory.resolve(self.message_handlers,
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/factory.py", line 51, in resolve
+    filters_set = list(
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/factory.py", line 77, in _resolve_registered
+    raise NameError("Invalid filter name(s): '" + "', ".join(full_config.keys()) + "'")
+
+[05.06.2022 20:12:34 | ERROR | MainThread]: NameError: Invalid filter name(s): 'is_needed_channel':
+  File "/home/fol/Documents/Python/TeleTwitBot/run.py", line 2, in <module>
+    from manager import ThreadingManager
+  File "/home/fol/Documents/Python/TeleTwitBot/manager.py", line 10, in <module>
+    from telegram_bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/__init__.py", line 1, in <module>
+    from .bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/bot.py", line 8, in <module>
+    from .commands import start, main_functions
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/commands/start.py", line 9, in <module>
+    async def bot_add_private_channel(message: types.message):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 1081, in decorator
+    self.register_my_chat_member_handler(
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 1054, in register_my_chat_member_handler
+    filters_set = self.filters_factory.resolve(
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/factory.py", line 51, in resolve
+    filters_set = list(
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/factory.py", line 77, in _resolve_registered
+    raise NameError("Invalid filter name(s): '" + "', ".join(full_config.keys()) + "'")
+
+[05.06.2022 20:17:45 | ERROR | MainThread]: ModuleNotFoundError: No module named 'main_functions':
+  File "/home/fol/Documents/Python/TeleTwitBot/run.py", line 2, in <module>
+    from manager import ThreadingManager
+  File "/home/fol/Documents/Python/TeleTwitBot/manager.py", line 10, in <module>
+    from telegram_bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/__init__.py", line 1, in <module>
+    from .bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/bot.py", line 6, in <module>
+    from .commands import *
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/commands/__init__.py", line 1, in <module>
+    from main_functions import *
+
+[05.06.2022 20:18:21 | ERROR | MainThread]: NameError: Invalid filter name(s): 'is_channel_admin':
+  File "/home/fol/Documents/Python/TeleTwitBot/run.py", line 1, in <module>
+    from manager import ThreadingManager
+  File "/home/fol/Documents/Python/TeleTwitBot/manager.py", line 10, in <module>
+    from telegram_bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/__init__.py", line 1, in <module>
+    from .bot import TgBot
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/bot.py", line 6, in <module>
+    from .commands import *
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/commands/__init__.py", line 1, in <module>
+    from .main_functions import *
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/commands/main_functions.py", line 9, in <module>
+    async def vis_command(message: types.Message):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 560, in decorator
+    self.register_message_handler(callback, *custom_filters,
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 479, in register_message_handler
+    filters_set = self.filters_factory.resolve(self.message_handlers,
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/factory.py", line 51, in resolve
+    filters_set = list(
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/factory.py", line 77, in _resolve_registered
+    raise NameError("Invalid filter name(s): '" + "', ".join(full_config.keys()) + "'")
+
+[05.06.2022 20:21:48 | WARNING | tg_bot]: Updates were skipped successfully.
+[05.06.2022 20:22:02 | ERROR | tg_bot]: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at /home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("'IsChannelAdminFilter' object has no attribute 'channel_id'")>
+Traceback (most recent call last):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 56, in execute_filter
+    return await filter_.filter(*args, **filter_.kwargs)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 161, in __call__
+    return await self.check(*args)
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/filters.py", line 45, in check
+    member = await message.bot.get_chat_member(self.channel_id, message.from_user.id)
+AttributeError: 'IsChannelAdminFilter' object has no attribute 'channel_id'
+[05.06.2022 20:22:32 | WARNING | tg_bot]: Updates were skipped successfully.
+[05.06.2022 20:22:35 | ERROR | tg_bot]: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at /home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("'IsChannelAdminFilter' object has no attribute 'channel_id'")>
+Traceback (most recent call last):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 56, in execute_filter
+    return await filter_.filter(*args, **filter_.kwargs)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 161, in __call__
+    return await self.check(*args)
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/filters.py", line 46, in check
+    member = await message.bot.get_chat_member(self.channel_id, message.from_user.id)
+AttributeError: 'IsChannelAdminFilter' object has no attribute 'channel_id'
+[05.06.2022 20:22:59 | WARNING | tg_bot]: Updates were skipped successfully.
+[05.06.2022 20:28:08 | WARNING | tg_bot]: Updates were skipped successfully.
+[05.06.2022 20:28:27 | ERROR | tg_bot]: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at /home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=AttributeError("'str' object has no attribute 'channel_title'")>
+Traceback (most recent call last):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 302, in process_update
+    return await self.my_chat_member_handlers.notify(update.my_chat_member)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 107, in notify
+    data.update(await check_filters(handler_obj.filters, args))
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 72, in check_filters
+    f = await execute_filter(filter_, args)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 56, in execute_filter
+    return await filter_.filter(*args, **filter_.kwargs)
+  File "/home/fol/Documents/Python/tests/venv/lib/python3.8/site-packages/aiogram/dispatcher/filters/filters.py", line 161, in __call__
+    return await self.check(*args)
+  File "/home/fol/Documents/Python/TeleTwitBot/telegram_bot/filters.py", line 23, in check
+    if chat_title == self.tg_bot.channel_title and status == 'administrator':
+AttributeError: 'str' object has no attribute 'channel_title'
